@@ -30,7 +30,7 @@ public class FileReader {
                     .collect(Collectors.toMap(e -> e[0], e -> e[1]));
             name = profileData.get("Name");
             age = Integer.parseInt (profileData.get("Age"));
-            email = profileData.get("Email");;
+            email = profileData.get("Email");
             phone = Long.parseLong (profileData.get("Phone"));
             return new Profile(name, age, email, phone);
         } catch (IOException e) {
